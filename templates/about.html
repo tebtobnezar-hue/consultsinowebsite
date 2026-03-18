@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero about-hero">
+  <div class="container">
+    <h1 data-en="About ELH Sino-Consult" data-fr="À Propos d'ELH Sino-Consult">About ELH Sino-Consult</h1>
+    <p data-en="Your trusted partner for higher education in China" data-fr="Votre partenaire de confiance pour l'enseignement supérieur en Chine">Your trusted partner for higher education in China</p>
+  </div>
+</section>
+
+<section class="about-mission section-pad reveal">
+  <div class="container about-grid">
+    <div class="about-text reveal-item">
+      <span class="section-tag" data-en="Our Mission" data-fr="Notre Mission">Our Mission</span>
+      <h2 data-en="Dedicated to Your Academic Success" data-fr="Dédiés à Votre Réussite Académique">Dedicated to Your Academic Success</h2>
+      <p data-en="Our agency is dedicated to helping students pursue higher education opportunities in China. We guide students through the entire application process and provide reliable, up-to-date information about universities and academic programs." data-fr="Notre agence est dédiée à aider les étudiants à saisir les opportunités d'enseignement supérieur en Chine. Nous guidons les étudiants tout au long du processus de candidature et fournissons des informations fiables sur les universités et les programmes académiques.">Our agency is dedicated to helping students pursue higher education opportunities in China. We guide students through the entire application process and provide reliable, up-to-date information about universities and academic programs.</p>
+      <p data-en="With years of experience and deep connections with over 50 Chinese universities, we are uniquely positioned to help you find the right program, navigate the admission requirements, and make your transition to student life in China as smooth as possible." data-fr="Avec des années d'expérience et des liens solides avec plus de 50 universités chinoises, nous sommes idéalement placés pour vous aider à trouver le bon programme, naviguer dans les conditions d'admission et rendre votre transition vers la vie étudiante en Chine aussi fluide que possible.">With years of experience and deep connections with over 50 Chinese universities, we are uniquely positioned to help you find the right program, navigate the admission requirements, and make your transition to student life in China as smooth as possible.</p>
+    </div>
+    <div class="about-visual reveal-item">
+      <div class="about-img-panel">
+        <img
+          class="about-img-main"
+          src="{{ url_for('static', filename='images/tsinghua.jpg') }}"
+          alt="Tsinghua University — Beijing, China"
+          loading="lazy"
+        >
+        <!-- University name badge -->
+        <div class="about-uni-badge">
+          <span class="about-uni-badge-name">Tsinghua University</span>
+          <span class="about-uni-badge-loc">Beijing, China</span>
+        </div>
+        <!-- China flag -->
+        <div class="about-flag-wrap">
+          <svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <rect width="30" height="20" fill="#DE2910"/>
+            <polygon points="5,2 5.9,4.7 8.8,4.7 6.5,6.3 7.3,9 5,7.4 2.7,9 3.5,6.3 1.2,4.7 4.1,4.7" fill="#FFDE00"/>
+            <polygon points="10,1 10.4,2.2 11.6,2.2 10.7,3 11,4.2 10,3.5 9,4.2 9.3,3 8.4,2.2 9.6,2.2" fill="#FFDE00"/>
+            <polygon points="12,3.5 12.4,4.7 13.6,4.7 12.7,5.5 13,6.7 12,6 11,6.7 11.3,5.5 10.4,4.7 11.6,4.7" fill="#FFDE00"/>
+            <polygon points="12,7 12.4,8.2 13.6,8.2 12.7,9 13,10.2 12,9.5 11,10.2 11.3,9 10.4,8.2 11.6,8.2" fill="#FFDE00"/>
+            <polygon points="10,9.5 10.4,10.7 11.6,10.7 10.7,11.5 11,12.7 10,12 9,12.7 9.3,11.5 8.4,10.7 9.6,10.7" fill="#FFDE00"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services section-pad reveal" style="background: var(--bg-alt)">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-en="What We Do" data-fr="Ce Que Nous Faisons">What We Do</span>
+      <h2 data-en="Our Services" data-fr="Nos Services">Our Services</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal-item reveal-scale"><div class="svc-icon">🔍</div><h3 data-en="University Search" data-fr="Recherche d'Université">University Search</h3><p data-en="Personalized university and program matching based on your profile, interests and career goals." data-fr="Correspondance personnalisée université/programme basée sur votre profil, intérêts et objectifs de carrière.">Personalized university and program matching based on your profile, interests and career goals.</p></div>
+      <div class="service-card reveal-item reveal-scale"><div class="svc-icon">📋</div><h3 data-en="Application Support" data-fr="Aide à la Candidature">Application Support</h3><p data-en="We handle all documentation, translations, and submission of your complete application package." data-fr="Nous gérons toute la documentation, les traductions et la soumission de votre dossier complet.">We handle all documentation, translations, and submission of your complete application package.</p></div>
+      <div class="service-card reveal-item reveal-scale"><div class="svc-icon">🛂</div><h3 data-en="Visa Assistance" data-fr="Assistance Visa">Visa Assistance</h3><p data-en="Step-by-step guidance through the Chinese student visa (X1/X2) application process." data-fr="Accompagnement étape par étape dans le processus de demande de visa étudiant chinois (X1/X2).">Step-by-step guidance through the Chinese student visa (X1/X2) application process.</p></div>
+      <div class="service-card reveal-item reveal-scale"><div class="svc-icon">🏠</div><h3 data-en="Pre-Departure Prep" data-fr="Préparation au Départ">Pre-Departure Prep</h3><p data-en="Airport pickup arrangements, accommodation help, and orientation for life in China." data-fr="Organisation de l'accueil à l'aéroport, aide au logement et orientation pour la vie en Chine.">Airport pickup arrangements, accommodation help, and orientation for life in China.</p></div>
+      <div class="service-card reveal-item reveal-scale"><div class="svc-icon">💰</div><h3 data-en="Scholarship Guidance" data-fr="Orientation Bourses">Scholarship Guidance</h3><p data-en="We identify and help you apply for Chinese government and university scholarships." data-fr="Nous identifions et vous aidons à postuler aux bourses du gouvernement chinois et des universités.">We identify and help you apply for Chinese government and university scholarships.</p></div>
+      <div class="service-card reveal-item reveal-scale"><div class="svc-icon">📞</div><h3 data-en="Ongoing Support" data-fr="Soutien Continu">Ongoing Support</h3><p data-en="We remain available throughout your studies to provide guidance and resolve any issues." data-fr="Nous restons disponibles tout au long de vos études pour vous conseiller et résoudre tout problème.">We remain available throughout your studies to provide guidance and resolve any issues.</p></div>
+    </div>
+  </div>
+</section>
+{% endblock %}

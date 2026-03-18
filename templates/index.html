@@ -1,0 +1,502 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-lightsweep"></div>
+    <div class="hero-particles" id="hero-particles"></div>
+  </div>
+  <div class="hero-content fade-in">
+    <!-- China flag badge — elegant, not dominant -->
+    <div class="china-flag-badge">
+      <svg class="flag-svg" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg">
+        <rect width="30" height="20" fill="#DE2910"/>
+        <!-- Large star -->
+        <polygon points="5,2 5.9,4.7 8.8,4.7 6.5,6.3 7.3,9 5,7.4 2.7,9 3.5,6.3 1.2,4.7 4.1,4.7" fill="#FFDE00"/>
+        <!-- 4 small stars -->
+        <polygon points="10,1 10.4,2.2 11.6,2.2 10.7,3 11,4.2 10,3.5 9,4.2 9.3,3 8.4,2.2 9.6,2.2" fill="#FFDE00"/>
+        <polygon points="12,3.5 12.4,4.7 13.6,4.7 12.7,5.5 13,6.7 12,6 11,6.7 11.3,5.5 10.4,4.7 11.6,4.7" fill="#FFDE00"/>
+        <polygon points="12,7 12.4,8.2 13.6,8.2 12.7,9 13,10.2 12,9.5 11,10.2 11.3,9 10.4,8.2 11.6,8.2" fill="#FFDE00"/>
+        <polygon points="10,9.5 10.4,10.7 11.6,10.7 10.7,11.5 11,12.7 10,12 9,12.7 9.3,11.5 8.4,10.7 9.6,10.7" fill="#FFDE00"/>
+      </svg>
+      <span data-en="Study in China" data-fr="Étudier en Chine">Study in China</span>
+    </div>
+    <span class="hero-badge" data-en="🎓 Your Future Starts Here" data-fr="🎓 Votre Avenir Commence Ici">🎓 Your Future Starts Here</span>
+    <h1 class="hero-title" data-en="Start Your Studies<br>in China" data-fr="Commencez Vos Études<br>en Chine">Start Your Studies<br>in China</h1>
+    <p class="hero-sub" data-en="Expert guidance for international students seeking admission to top Chinese universities." data-fr="Accompagnement expert pour les étudiants internationaux souhaitant intégrer les meilleures universités chinoises.">Expert guidance for international students seeking admission to top Chinese universities.</p>
+    <div class="hero-actions">
+      <a href="/apply" class="btn-primary" data-en="Apply Now" data-fr="Postuler Maintenant">Apply Now</a>
+      <a href="/study" class="btn-secondary" data-en="Explore Programs" data-fr="Explorer les Programmes">Explore Programs</a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span></span>
+  </div>
+</section>
+
+<!-- WHY CHINA -->
+<section class="why-china section-pad reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-en="Why China?" data-fr="Pourquoi la Chine?">Why China?</span>
+      <h2 data-en="Advantages of Studying in China" data-fr="Avantages d'Étudier en Chine">Advantages of Studying in China</h2>
+    </div>
+    <div class="cards-grid">
+      <div class="card reveal-item reveal-scale">
+        <div class="card-icon">🏛️</div>
+        <h3 data-en="World-Class Universities" data-fr="Universités de Rang Mondial">World-Class Universities</h3>
+        <p data-en="China hosts over 40 universities ranked in global top 500, offering internationally recognized degrees." data-fr="La Chine abrite plus de 40 universités classées dans le top 500 mondial, offrant des diplômes reconnus internationalement.">China hosts over 40 universities ranked in global top 500, offering internationally recognized degrees.</p>
+      </div>
+      <div class="card reveal-item reveal-scale">
+        <div class="card-icon">💰</div>
+        <h3 data-en="Affordable Costs" data-fr="Coûts Abordables">Affordable Costs</h3>
+        <p data-en="Tuition and living costs are significantly lower than Western countries, with generous scholarship options." data-fr="Les frais de scolarité et le coût de la vie sont bien inférieurs à ceux des pays occidentaux, avec de nombreuses bourses.">Tuition and living costs are significantly lower than Western countries, with generous scholarship options.</p>
+      </div>
+      <div class="card reveal-item reveal-scale">
+        <div class="card-icon">🌏</div>
+        <h3 data-en="Cultural Experience" data-fr="Expérience Culturelle">Cultural Experience</h3>
+        <p data-en="Immerse yourself in one of the world's oldest civilizations while gaining a global perspective." data-fr="Imprégnez-vous de l'une des plus anciennes civilisations du monde tout en acquérant une vision globale.">Immerse yourself in one of the world's oldest civilizations while gaining a global perspective.</p>
+      </div>
+      <div class="card reveal-item reveal-scale">
+        <div class="card-icon">📈</div>
+        <h3 data-en="Career Opportunities" data-fr="Opportunités de Carrière">Career Opportunities</h3>
+        <p data-en="A degree from China opens doors to booming industries in Asia's largest and fastest-growing economy." data-fr="Un diplôme de Chine ouvre des portes dans les industries en plein essor de la plus grande économie d'Asie.">A degree from China opens doors to booming industries in Asia's largest and fastest-growing economy.</p>
+      </div>
+      <div class="card reveal-item reveal-scale">
+        <div class="card-icon">🗣️</div>
+        <h3 data-en="Learn Mandarin" data-fr="Apprendre le Mandarin">Learn Mandarin</h3>
+        <p data-en="Gain fluency in Mandarin Chinese — the most spoken language in the world — a priceless career asset." data-fr="Maîtrisez le mandarin — la langue la plus parlée au monde — un atout de carrière inestimable.">Gain fluency in Mandarin Chinese — the most spoken language in the world — a priceless career asset.</p>
+      </div>
+      <div class="card reveal-item reveal-scale">
+        <div class="card-icon">🤝</div>
+        <h3 data-en="Expert Support" data-fr="Soutien Expert">Expert Support</h3>
+        <p data-en="ELH Sino-Consult guides you every step of the way, from program selection to visa and arrival." data-fr="ELH Sino-Consult vous accompagne à chaque étape, de la sélection du programme jusqu'à votre arrivée.">ELH Sino-Consult guides you every step of the way, from program selection to visa and arrival.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR PROGRAMS -->
+<section class="programs section-pad reveal" style="background: var(--bg-alt)">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-en="Our Programs" data-fr="Nos Programmes">Our Programs</span>
+      <h2 data-en="Popular Fields of Study" data-fr="Filières Populaires">Popular Fields of Study</h2>
+    </div>
+    <div class="programs-grid">
+      <a href="/apply" class="program-card reveal-item reveal-scale">
+        <div class="prog-icon">🏥</div>
+        <h3 data-en="Medicine" data-fr="Médecine">Medicine</h3>
+        <p data-en="MBBS, Dentistry, Pharmacy" data-fr="MBBS, Dentisterie, Pharmacie">MBBS, Dentistry, Pharmacy</p>
+        <span class="prog-arrow">→</span>
+      </a>
+      <a href="/apply" class="program-card reveal-item reveal-scale">
+        <div class="prog-icon">⚙️</div>
+        <h3 data-en="Engineering" data-fr="Ingénierie">Engineering</h3>
+        <p data-en="Civil, Mechanical, Electrical" data-fr="Civil, Mécanique, Électrique">Civil, Mechanical, Electrical</p>
+        <span class="prog-arrow">→</span>
+      </a>
+      <a href="/apply" class="program-card reveal-item reveal-scale">
+        <div class="prog-icon">📊</div>
+        <h3 data-en="Business" data-fr="Commerce">Business</h3>
+        <p data-en="MBA, Finance, Marketing" data-fr="MBA, Finance, Marketing">MBA, Finance, Marketing</p>
+        <span class="prog-arrow">→</span>
+      </a>
+      <a href="/apply" class="program-card reveal-item reveal-scale">
+        <div class="prog-icon">💻</div>
+        <h3 data-en="Computer Science" data-fr="Informatique">Computer Science</h3>
+        <p data-en="AI, Software Eng, Data Science" data-fr="IA, Génie Logiciel, Data Science">AI, Software Eng, Data Science</p>
+        <span class="prog-arrow">→</span>
+      </a>
+      <a href="/apply" class="program-card reveal-item reveal-scale">
+        <div class="prog-icon">🈶</div>
+        <h3 data-en="Chinese Language" data-fr="Langue Chinoise">Chinese Language</h3>
+        <p data-en="HSK Prep, Cultural Studies" data-fr="Préparation HSK, Études Culturelles">HSK Prep, Cultural Studies</p>
+        <span class="prog-arrow">→</span>
+      </a>
+      <a href="/apply" class="program-card reveal-item reveal-scale">
+        <div class="prog-icon">💊</div>
+        <h3 data-en="Pharmacy" data-fr="Pharmacie">Pharmacy</h3>
+        <p data-en="PharmD, Clinical Pharmacy" data-fr="Pharmacie Clinique, PharmD">PharmD, Clinical Pharmacy</p>
+        <span class="prog-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION PROCESS -->
+<section class="process section-pad reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-en="How It Works" data-fr="Comment Ça Marche">How It Works</span>
+      <h2 data-en="4 Simple Steps to China" data-fr="4 Étapes Simples vers la Chine">4 Simple Steps to China</h2>
+    </div>
+    <div class="steps-row">
+      <div class="step reveal-item">
+        <div class="step-num">01</div>
+        <h3 data-en="Free Consultation" data-fr="Consultation Gratuite">Free Consultation</h3>
+        <p data-en="Submit your details and we'll assess your profile and goals." data-fr="Soumettez vos informations et nous évaluerons votre profil et vos objectifs.">Submit your details and we'll assess your profile and goals.</p>
+      </div>
+      <div class="step-line"></div>
+      <div class="step reveal-item">
+        <div class="step-num">02</div>
+        <h3 data-en="University Selection" data-fr="Sélection d'Université">University Selection</h3>
+        <p data-en="We match you with the best programs at our 50+ partner universities." data-fr="Nous vous mettons en relation avec les meilleurs programmes dans nos 50+ universités partenaires.">We match you with the best programs at our 50+ partner universities.</p>
+      </div>
+      <div class="step-line"></div>
+      <div class="step reveal-item">
+        <div class="step-num">03</div>
+        <h3 data-en="Application & Documents" data-fr="Dossier & Documents">Application & Documents</h3>
+        <p data-en="We help prepare and submit your complete application package." data-fr="Nous vous aidons à préparer et soumettre votre dossier de candidature complet.">We help prepare and submit your complete application package.</p>
+      </div>
+      <div class="step-line"></div>
+      <div class="step reveal-item">
+        <div class="step-num">04</div>
+        <h3 data-en="Visa & Departure" data-fr="Visa & Départ">Visa & Departure</h3>
+        <p data-en="We guide you through the visa process and prepare you for life in China." data-fr="Nous vous guidons dans le processus de visa et vous préparons à la vie en Chine.">We guide you through the visa process and prepare you for life in China.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATISTICS -->
+<section class="stats-section reveal">
+  <div class="stats-bg"></div>
+  <div class="container stats-grid">
+    <div class="stat-item reveal-item">
+      <div class="stat-icon">🎓</div>
+      <div class="stat-number-row"><span class="stat-num" data-target="10000">0</span><span class="stat-plus">+</span></div>
+      <p data-en="Students Guided" data-fr="Étudiants Accompagnés">Students Guided</p>
+    </div>
+    <div class="stat-item reveal-item">
+      <div class="stat-icon">🏛️</div>
+      <div class="stat-number-row"><span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span></div>
+      <p data-en="Partner Universities" data-fr="Universités Partenaires">Partner Universities</p>
+    </div>
+    <div class="stat-item reveal-item">
+      <div class="stat-icon">📚</div>
+      <div class="stat-number-row"><span class="stat-num" data-target="26">0</span><span class="stat-plus">+</span></div>
+      <p data-en="Programs Available" data-fr="Programmes Disponibles">Programs Available</p>
+    </div>
+    <div class="stat-item reveal-item">
+      <div class="stat-icon">⭐</div>
+      <div class="stat-number-row"><span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span></div>
+      <p data-en="Years of Experience" data-fr="Années d'Expérience">Years of Experience</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST & MISSION SECTION -->
+<section class="trust-section section-pad reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-en="Why Trust Us" data-fr="Pourquoi Nous Faire Confiance">Why Trust Us</span>
+      <h2 data-en="Our Mission & Core Values" data-fr="Notre Mission & Valeurs Fondamentales">Our Mission & Core Values</h2>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-card reveal-item">
+        <div class="trust-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 data-en="100% Trusted" data-fr="100% de Confiance">100% Trusted</h3>
+        <p data-en="Verified partnerships with 50+ accredited Chinese universities. Every placement is backed by official agreements." data-fr="Partenariats vérifiés avec plus de 50 universités chinoises accréditées. Chaque placement est soutenu par des accords officiels.">Verified partnerships with 50+ accredited Chinese universities. Every placement is backed by official agreements.</p>
+      </div>
+      <div class="trust-card reveal-item">
+        <div class="trust-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3 data-en="Fast Response" data-fr="Réponse Rapide">Fast Response</h3>
+        <p data-en="Our advisors respond within 24 hours. From first contact to university acceptance, we're with you at every step." data-fr="Nos conseillers répondent dans les 24 heures. Du premier contact à l'acceptation universitaire, nous vous accompagnons à chaque étape.">Our advisors respond within 24 hours. From first contact to university acceptance, we're with you at every step.</p>
+      </div>
+      <div class="trust-card reveal-item">
+        <div class="trust-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 data-en="Expert Advisors" data-fr="Conseillers Experts">Expert Advisors</h3>
+        <p data-en="Our team includes former students who studied in China — real first-hand experience guiding your journey." data-fr="Notre équipe comprend d'anciens étudiants ayant étudié en Chine — une véritable expérience de première main pour guider votre parcours.">Our team includes former students who studied in China — real first-hand experience guiding your journey.</p>
+      </div>
+      <div class="trust-card reveal-item">
+        <div class="trust-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h3 data-en="Full Support" data-fr="Support Complet">Full Support</h3>
+        <p data-en="Visa guidance, accommodation help, airport pickup, and ongoing support throughout your studies in China." data-fr="Aide au visa, assistance logement, accueil à l'aéroport et soutien continu tout au long de vos études en Chine.">Visa guidance, accommodation help, airport pickup, and ongoing support throughout your studies in China.</p>
+      </div>
+      <div class="trust-card reveal-item">
+        <div class="trust-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3 data-en="Scholarship Help" data-fr="Aide aux Bourses">Scholarship Help</h3>
+        <p data-en="We identify CSC government scholarships and university grants you qualify for, maximizing your financial opportunities." data-fr="Nous identifions les bourses gouvernementales CSC et les aides universitaires auxquelles vous êtes éligible.">We identify CSC government scholarships and university grants you qualify for, maximizing your financial opportunities.</p>
+      </div>
+      <div class="trust-card reveal-item">
+        <div class="trust-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+        </div>
+        <h3 data-en="Transparent Process" data-fr="Processus Transparent">Transparent Process</h3>
+        <p data-en="No hidden fees. Clear timelines. Honest assessments. We tell you exactly what to expect at every stage." data-fr="Aucuns frais cachés. Délais clairs. Évaluations honnêtes. Nous vous disons exactement quoi attendre à chaque étape.">No hidden fees. Clear timelines. Honest assessments. We tell you exactly what to expect at every stage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE MAP OF CHINA -->
+<section class="map-section section-pad reveal" style="background: var(--bg-alt)">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-en="Our Network" data-fr="Notre Réseau">Our Network</span>
+      <h2 data-en="Universities Across China" data-fr="Universités à Travers la Chine">Universities Across China</h2>
+    </div>
+    <div class="china-map-wrap reveal-item">
+      <svg class="china-map-svg" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+        <!-- Stylized China outline shape -->
+        <defs>
+          <radialGradient id="mapBg" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="var(--bg-alt)" stop-opacity="1"/>
+            <stop offset="100%" stop-color="var(--bg)" stop-opacity="1"/>
+          </radialGradient>
+          <filter id="glow"><feGaussianBlur stdDeviation="3" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <rect width="800" height="600" fill="url(#mapBg)" rx="16"/>
+        <!-- Grid lines -->
+        <g stroke="var(--border)" stroke-width="0.5" opacity="0.4">
+          <line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="300" x2="800" y2="300"/><line x1="0" y1="450" x2="800" y2="450"/>
+          <line x1="200" y1="0" x2="200" y2="600"/><line x1="400" y1="0" x2="400" y2="600"/><line x1="600" y1="0" x2="600" y2="600"/>
+        </g>
+        <!-- China simplified silhouette -->
+        <path d="M160,80 L200,60 L260,55 L320,65 L390,50 L460,55 L530,70 L590,90 L640,110 L680,140 L700,175 L695,210 L710,240 L700,270 L680,290 L660,320 L650,360 L620,390 L600,420 L580,450 L550,470 L520,480 L490,500 L460,510 L430,500 L410,480 L390,470 L370,480 L350,500 L330,510 L310,500 L290,490 L270,480 L250,460 L230,440 L210,420 L190,400 L175,380 L160,360 L145,340 L140,310 L135,280 L130,250 L125,220 L130,190 L140,165 L150,140 L155,115 Z" fill="var(--blue)" opacity="0.08" stroke="var(--blue)" stroke-width="1.5" stroke-opacity="0.2"/>
+        <!-- City markers with tooltips -->
+        <!-- Beijing -->
+        <g class="map-marker" data-city="Beijing" data-uni="Peking University · Tsinghua University">
+          <circle cx="430" cy="145" r="10" fill="var(--blue)" opacity="0.15" class="marker-pulse"/>
+          <circle cx="430" cy="145" r="6" fill="var(--blue)" class="marker-dot"/>
+          <circle cx="430" cy="145" r="6" fill="none" stroke="var(--blue)" stroke-width="1.5" class="marker-ring"/>
+          <text x="445" y="140" font-size="11" fill="var(--text)" font-family="DM Sans,sans-serif" font-weight="600">Beijing</text>
+          <text x="445" y="153" font-size="9" fill="var(--text-muted)" font-family="DM Sans,sans-serif">Peking · Tsinghua</text>
+        </g>
+        <!-- Shanghai -->
+        <g class="map-marker" data-city="Shanghai" data-uni="Fudan University · Shanghai Jiao Tong">
+          <circle cx="530" cy="270" r="10" fill="var(--red)" opacity="0.15" class="marker-pulse"/>
+          <circle cx="530" cy="270" r="6" fill="var(--red)" class="marker-dot"/>
+          <circle cx="530" cy="270" r="6" fill="none" stroke="var(--red)" stroke-width="1.5" class="marker-ring"/>
+          <text x="545" y="265" font-size="11" fill="var(--text)" font-family="DM Sans,sans-serif" font-weight="600">Shanghai</text>
+          <text x="545" y="278" font-size="9" fill="var(--text-muted)" font-family="DM Sans,sans-serif">Fudan · Jiao Tong</text>
+        </g>
+        <!-- Wuhan -->
+        <g class="map-marker" data-city="Wuhan" data-uni="Wuhan University · HUST">
+          <circle cx="440" cy="290" r="10" fill="#2e7dd1" opacity="0.15" class="marker-pulse"/>
+          <circle cx="440" cy="290" r="6" fill="#2e7dd1" class="marker-dot"/>
+          <circle cx="440" cy="290" r="6" fill="none" stroke="#2e7dd1" stroke-width="1.5" class="marker-ring"/>
+          <text x="455" y="285" font-size="11" fill="var(--text)" font-family="DM Sans,sans-serif" font-weight="600">Wuhan</text>
+          <text x="455" y="298" font-size="9" fill="var(--text-muted)" font-family="DM Sans,sans-serif">Wuhan Uni · HUST</text>
+        </g>
+        <!-- Guangzhou -->
+        <g class="map-marker" data-city="Guangzhou" data-uni="Sun Yat-sen University · SYSU">
+          <circle cx="430" cy="390" r="10" fill="#16a34a" opacity="0.15" class="marker-pulse"/>
+          <circle cx="430" cy="390" r="6" fill="#16a34a" class="marker-dot"/>
+          <circle cx="430" cy="390" r="6" fill="none" stroke="#16a34a" stroke-width="1.5" class="marker-ring"/>
+          <text x="445" y="385" font-size="11" fill="var(--text)" font-family="DM Sans,sans-serif" font-weight="600">Guangzhou</text>
+          <text x="445" y="398" font-size="9" fill="var(--text-muted)" font-family="DM Sans,sans-serif">Sun Yat-sen Uni</text>
+        </g>
+        <!-- Chengdu -->
+        <g class="map-marker" data-city="Chengdu" data-uni="Sichuan University · UESTC">
+          <circle cx="310" cy="310" r="10" fill="#d97706" opacity="0.15" class="marker-pulse"/>
+          <circle cx="310" cy="310" r="6" fill="#d97706" class="marker-dot"/>
+          <circle cx="310" cy="310" r="6" fill="none" stroke="#d97706" stroke-width="1.5" class="marker-ring"/>
+          <text x="235" y="305" font-size="11" fill="var(--text)" font-family="DM Sans,sans-serif" font-weight="600" text-anchor="end">Chengdu</text>
+          <text x="235" y="318" font-size="9" fill="var(--text-muted)" font-family="DM Sans,sans-serif" text-anchor="end">Sichuan Uni</text>
+        </g>
+        <!-- Xi'an -->
+        <g class="map-marker" data-city="Xi'an" data-uni="Xi'an Jiaotong University">
+          <circle cx="350" cy="240" r="10" fill="#7c3aed" opacity="0.15" class="marker-pulse"/>
+          <circle cx="350" cy="240" r="6" fill="#7c3aed" class="marker-dot"/>
+          <circle cx="350" cy="240" r="6" fill="none" stroke="#7c3aed" stroke-width="1.5" class="marker-ring"/>
+          <text x="278" y="235" font-size="11" fill="var(--text)" font-family="DM Sans,sans-serif" font-weight="600" text-anchor="end">Xi'an</text>
+          <text x="278" y="248" font-size="9" fill="var(--text-muted)" font-family="DM Sans,sans-serif" text-anchor="end">Jiaotong Uni</text>
+        </g>
+        <!-- Hangzhou -->
+        <g class="map-marker" data-city="Hangzhou" data-uni="Zhejiang University">
+          <circle cx="505" cy="290" r="10" fill="#0891b2" opacity="0.15" class="marker-pulse"/>
+          <circle cx="505" cy="290" r="6" fill="#0891b2" class="marker-dot"/>
+          <circle cx="505" cy="290" r="6" fill="none" stroke="#0891b2" stroke-width="1.5" class="marker-ring"/>
+          <text x="515" y="302" font-size="11" fill="var(--text)" font-family="DM Sans,sans-serif" font-weight="600">Hangzhou</text>
+          <text x="515" y="315" font-size="9" fill="var(--text-muted)" font-family="DM Sans,sans-serif">Zhejiang Uni</text>
+        </g>
+        <!-- Legend -->
+        <g>
+          <rect x="20" y="540" width="12" height="12" rx="6" fill="var(--blue)"/>
+          <text x="38" y="551" font-size="10" fill="var(--text-muted)" font-family="DM Sans,sans-serif">Major Partner City</text>
+          <circle cx="150" cy="546" r="5" fill="none" stroke="var(--text-muted)" stroke-width="1"/>
+          <text x="162" y="551" font-size="10" fill="var(--text-muted)" font-family="DM Sans,sans-serif">Click marker for details</text>
+        </g>
+      </svg>
+      <!-- Tooltip -->
+      <div class="map-tooltip" id="map-tooltip">
+        <strong class="tooltip-city"></strong>
+        <span class="tooltip-uni"></span>
+      </div>
+    </div>
+    <div class="map-cities-list reveal-item">
+      <div class="map-city-tag"><span style="color:var(--blue)">●</span> Beijing</div>
+      <div class="map-city-tag"><span style="color:var(--red)">●</span> Shanghai</div>
+      <div class="map-city-tag"><span style="color:#2e7dd1">●</span> Wuhan</div>
+      <div class="map-city-tag"><span style="color:#16a34a">●</span> Guangzhou</div>
+      <div class="map-city-tag"><span style="color:#d97706">●</span> Chengdu</div>
+      <div class="map-city-tag"><span style="color:#7c3aed">●</span> Xi'an</div>
+      <div class="map-city-tag"><span style="color:#0891b2">●</span> Hangzhou</div>
+    </div>
+  </div>
+</section>
+
+<!-- STUDENT REGISTRATION FORM -->
+<section class="registration-section section-pad reveal" id="register">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-en="Register Now" data-fr="Inscrivez-vous">Register Now</span>
+      <h2 data-en="Student Registration Form" data-fr="Formulaire d'Inscription Étudiant">Student Registration Form</h2>
+      <p class="section-sub" data-en="Fill in your details and our team will match you with the perfect program within 24 hours." data-fr="Remplissez vos informations et notre équipe vous trouvera le programme idéal dans les 24 heures.">Fill in your details and our team will match you with the perfect program within 24 hours.</p>
+    </div>
+    <div class="reg-form-wrap reveal-item">
+      <form class="reg-form" id="reg-form" action="/submit" method="POST" enctype="multipart/form-data">
+        <div class="reg-form-section-title" data-en="Personal Information" data-fr="Informations Personnelles">Personal Information</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label data-en="First Name *" data-fr="Prénom *">First Name *</label>
+            <input type="text" name="first_name" required placeholder="Ahmed">
+          </div>
+          <div class="form-group">
+            <label data-en="Last Name *" data-fr="Nom *">Last Name *</label>
+            <input type="text" name="last_name" required placeholder="Benali">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label data-en="Age *" data-fr="Âge *">Age *</label>
+            <input type="number" name="age" required placeholder="20" min="16" max="60">
+          </div>
+          <div class="form-group">
+            <label data-en="Nationality *" data-fr="Nationalité *">Nationality *</label>
+            <input type="text" name="nationality" required placeholder="Moroccan">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label data-en="Email Address *" data-fr="Adresse Email *">Email Address *</label>
+            <input type="email" name="email" required placeholder="ahmed@email.com">
+          </div>
+          <div class="form-group">
+            <label data-en="Phone Number *" data-fr="Numéro de Téléphone *">Phone Number *</label>
+            <input type="tel" name="phone" required placeholder="+212 6XX-XXXXXX">
+          </div>
+        </div>
+        <div class="reg-form-section-title" data-en="Academic Preferences" data-fr="Préférences Académiques">Academic Preferences</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label data-en="Preferred City *" data-fr="Ville Préférée *">Preferred City *</label>
+            <select name="city" required>
+              <option value="" data-en="Select a city..." data-fr="Choisir une ville...">Select a city...</option>
+              <option value="Beijing">Beijing</option>
+              <option value="Shanghai">Shanghai</option>
+              <option value="Wuhan">Wuhan</option>
+              <option value="Guangzhou">Guangzhou</option>
+              <option value="Chengdu">Chengdu</option>
+              <option value="Xi'an">Xi'an</option>
+              <option value="Hangzhou">Hangzhou</option>
+              <option value="other" data-en="Other City" data-fr="Autre Ville">Other City</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-en="Preferred University (optional)" data-fr="Université Préférée (optionnel)">Preferred University (optional)</label>
+            <select name="program">
+              <option value="" data-en="Any university..." data-fr="Toute université...">Any university...</option>
+              <option>Peking University</option>
+              <option>Tsinghua University</option>
+              <option>Fudan University</option>
+              <option>Shanghai Jiao Tong University</option>
+              <option>Zhejiang University</option>
+              <option>Wuhan University</option>
+              <option>Sun Yat-sen University</option>
+              <option>Sichuan University</option>
+              <option data-en="Other University" data-fr="Autre Université">Other University</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-en="Desired Program *" data-fr="Programme Souhaité *">Desired Program *</label>
+          <div class="program-checkbox-grid">
+            <label class="prog-check"><input type="radio" name="desired_program" value="Medicine / MBBS" required><span data-en="🏥 Medicine / MBBS" data-fr="🏥 Médecine / MBBS">🏥 Medicine / MBBS</span></label>
+            <label class="prog-check"><input type="radio" name="desired_program" value="Pharmacy"><span data-en="💊 Pharmacy" data-fr="💊 Pharmacie">💊 Pharmacy</span></label>
+            <label class="prog-check"><input type="radio" name="desired_program" value="Engineering"><span data-en="⚙️ Engineering" data-fr="⚙️ Ingénierie">⚙️ Engineering</span></label>
+            <label class="prog-check"><input type="radio" name="desired_program" value="Business / MBA"><span data-en="📊 Business / MBA" data-fr="📊 Commerce / MBA">📊 Business / MBA</span></label>
+            <label class="prog-check"><input type="radio" name="desired_program" value="Computer Science"><span data-en="💻 Computer Science" data-fr="💻 Informatique">💻 Computer Science</span></label>
+            <label class="prog-check"><input type="radio" name="desired_program" value="Chinese Language"><span data-en="🈶 Chinese Language" data-fr="🈶 Langue Chinoise">🈶 Chinese Language</span></label>
+          </div>
+        </div>
+        <div class="reg-form-section-title" data-en="Documents" data-fr="Documents">Documents</div>
+        <div class="form-group">
+          <label data-en="Upload School Certificate / Academic Documents (optional)" data-fr="Télécharger Certificat Scolaire / Documents Académiques (optionnel)">Upload School Certificate / Academic Documents (optional)</label>
+          <div class="file-upload-area" id="file-upload-area">
+            <input type="file" name="document" id="doc-upload" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" style="display:none">
+            <div class="file-upload-content" onclick="document.getElementById('doc-upload').click()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:2.5rem;height:2.5rem;color:var(--text-muted);margin-bottom:0.75rem"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <p class="file-upload-text" data-en="Click to upload or drag & drop" data-fr="Cliquez pour télécharger ou glisser-déposer">Click to upload or drag & drop</p>
+              <p class="file-upload-hint" data-en="PDF, JPG, PNG, DOC (max 10MB)" data-fr="PDF, JPG, PNG, DOC (max 10Mo)">PDF, JPG, PNG, DOC (max 10MB)</p>
+            </div>
+            <div class="file-name-display" id="file-name-display" style="display:none"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-en="Additional Message (optional)" data-fr="Message Supplémentaire (optionnel)">Additional Message (optional)</label>
+          <textarea name="message" rows="3" placeholder="Tell us about your academic background and goals..."></textarea>
+        </div>
+        <button type="submit" class="btn-register" id="reg-submit">
+          <span class="btn-reg-text" data-en="Submit Registration" data-fr="Soumettre l'Inscription">Submit Registration</span>
+          <svg class="btn-reg-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <div class="form-status" id="reg-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+<section class="quick-form section-pad reveal" id="quick-contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-en="Free Consultation" data-fr="Consultation Gratuite">Free Consultation</span>
+      <h2 data-en="Start Your Application Today" data-fr="Commencez Votre Candidature Aujourd'hui">Start Your Application Today</h2>
+    </div>
+    <form class="contact-form" id="quick-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label data-en="First Name" data-fr="Prénom">First Name</label>
+          <input type="text" name="first_name" placeholder="John" required>
+        </div>
+        <div class="form-group">
+          <label data-en="Last Name" data-fr="Nom">Last Name</label>
+          <input type="text" name="last_name" placeholder="Doe" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label data-en="Email Address" data-fr="Adresse Email">Email Address</label>
+          <input type="email" name="email" placeholder="john@email.com" required>
+        </div>
+        <div class="form-group">
+          <label data-en="Phone Number" data-fr="Numéro de Téléphone">Phone Number</label>
+          <input type="tel" name="phone" placeholder="+212 6XX-XXXXXX" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label data-en="City" data-fr="Ville">City</label>
+        <input type="text" name="city" placeholder="Casablanca" required>
+      </div>
+      <button type="submit" class="btn-primary btn-full" data-en="Send My Application" data-fr="Envoyer Ma Candidature">Send My Application</button>
+      <div class="form-status" id="quick-status"></div>
+    </form>
+  </div>
+</section>
+
+{% endblock %}

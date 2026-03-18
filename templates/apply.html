@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero apply-hero">
+  <div class="container">
+    <h1 data-en="Apply for Free Consultation" data-fr="Postuler pour une Consultation Gratuite">Apply for Free Consultation</h1>
+    <p data-en="Fill in the form below and our team will reach out within 24 hours." data-fr="Remplissez le formulaire ci-dessous et notre équipe vous contactera dans les 24 heures.">Fill in the form below and our team will reach out within 24 hours.</p>
+  </div>
+</section>
+
+<section class="apply-section section-pad reveal">
+  <div class="container apply-grid">
+    <div class="apply-info reveal-item">
+      <h3 data-en="Why Apply With Us?" data-fr="Pourquoi Postuler Avec Nous?">Why Apply With Us?</h3>
+      <ul class="apply-benefits">
+        <li>✅ <span data-en="100% free consultation" data-fr="Consultation 100% gratuite">100% free consultation</span></li>
+        <li>✅ <span data-en="Response within 24 hours" data-fr="Réponse dans les 24 heures">Response within 24 hours</span></li>
+        <li>✅ <span data-en="Expert university matching" data-fr="Correspondance universitaire experte">Expert university matching</span></li>
+        <li>✅ <span data-en="Full application support" data-fr="Soutien complet à la candidature">Full application support</span></li>
+        <li>✅ <span data-en="Visa guidance included" data-fr="Accompagnement visa inclus">Visa guidance included</span></li>
+        <li>✅ <span data-en="Scholarship assistance" data-fr="Aide aux bourses">Scholarship assistance</span></li>
+      </ul>
+      <div class="apply-contact-box">
+        <p>📱 <a href="https://wa.me/212688644749">0688 644 749</a></p>
+        <p>✉️ <a href="mailto:iliassteb22@gmail.com">iliassteb22@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="apply-form-wrap reveal-item">
+      {% if request.args.get('success') %}
+      <div class="form-success-banner">
+        🎉 <span data-en="Your application has been submitted! We'll contact you soon." data-fr="Votre candidature a été soumise ! Nous vous contacterons bientôt.">Your application has been submitted! We'll contact you soon.</span>
+      </div>
+      {% endif %}
+      {% if error %}
+      <div class="form-error-banner">⚠️ {{ error }}</div>
+      {% endif %}
+      <form class="contact-form" id="apply-form" action="/submit" method="POST">
+        <div class="form-row">
+          <div class="form-group"><label data-en="First Name *" data-fr="Prénom *">First Name *</label><input type="text" name="first_name" required placeholder="Ahmed"></div>
+          <div class="form-group"><label data-en="Last Name *" data-fr="Nom *">Last Name *</label><input type="text" name="last_name" required placeholder="Benali"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label data-en="Email Address *" data-fr="Adresse Email *">Email Address *</label><input type="email" name="email" required placeholder="ahmed@email.com"></div>
+          <div class="form-group"><label data-en="Phone Number *" data-fr="Numéro de Téléphone *">Phone Number *</label><input type="tel" name="phone" required placeholder="+212 6XX-XXXXXX"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label data-en="City *" data-fr="Ville *">City *</label><input type="text" name="city" required placeholder="Casablanca"></div>
+          <div class="form-group">
+            <label data-en="Desired Program" data-fr="Programme Souhaité">Desired Program</label>
+            <select name="program">
+              <option value="" data-en="Select a program..." data-fr="Sélectionner un programme...">Select a program...</option>
+              <option value="medicine" data-en="Medicine / MBBS" data-fr="Médecine / MBBS">Medicine / MBBS</option>
+              <option value="pharmacy" data-en="Pharmacy" data-fr="Pharmacie">Pharmacy</option>
+              <option value="engineering" data-en="Engineering" data-fr="Ingénierie">Engineering</option>
+              <option value="business" data-en="Business / MBA" data-fr="Commerce / MBA">Business / MBA</option>
+              <option value="cs" data-en="Computer Science" data-fr="Informatique">Computer Science</option>
+              <option value="language" data-en="Chinese Language" data-fr="Langue Chinoise">Chinese Language</option>
+              <option value="other" data-en="Other" data-fr="Autre">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-en="Message (optional)" data-fr="Message (optionnel)">Message (optional)</label>
+          <textarea name="message" rows="4" placeholder="Tell us about your academic background and goals..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full" data-en="Submit Application" data-fr="Soumettre la Candidature">Submit Application</button>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}

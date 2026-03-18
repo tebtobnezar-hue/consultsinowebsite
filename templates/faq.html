@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero faq-hero">
+  <div class="container">
+    <h1>FAQ</h1>
+    <p data-en="Answers to common questions about studying in China" data-fr="Réponses aux questions fréquentes sur les études en Chine">Answers to common questions about studying in China</p>
+  </div>
+</section>
+
+<section class="faq-section section-pad reveal">
+  <div class="container faq-container">
+    <div class="faq-item reveal-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span data-en="Do I need to speak Chinese to study in China?" data-fr="Dois-je parler chinois pour étudier en Chine?">Do I need to speak Chinese to study in China?</span>
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">
+        <p data-en="No! Hundreds of programs are offered entirely in English. However, learning basic Mandarin is encouraged and will greatly enrich your experience. ELH Sino-Consult helps you find the right English-taught programs." data-fr="Non ! Des centaines de programmes sont entièrement dispensés en anglais. Cependant, apprendre les bases du mandarin est encouragé et enrichira grandement votre expérience. ELH Sino-Consult vous aide à trouver les bons programmes en anglais.">No! Hundreds of programs are offered entirely in English. However, learning basic Mandarin is encouraged and will greatly enrich your experience. ELH Sino-Consult helps you find the right English-taught programs.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span data-en="What are the admission requirements?" data-fr="Quelles sont les conditions d'admission?">What are the admission requirements?</span>
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">
+        <p data-en="Requirements vary by university and program but generally include: a high school diploma or equivalent, academic transcripts, a copy of your passport, and a personal statement. Our team will guide you through exactly what each university requires." data-fr="Les exigences varient selon l'université et le programme mais comprennent généralement : un diplôme de fin d'études secondaires, des relevés de notes, une copie de votre passeport et une lettre de motivation. Notre équipe vous guidera sur ce que chaque université exige.">Requirements vary by university and program but generally include: a high school diploma or equivalent, academic transcripts, a copy of your passport, and a personal statement. Our team will guide you through exactly what each university requires.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span data-en="Are there scholarships available?" data-fr="Y a-t-il des bourses disponibles?">Are there scholarships available?</span>
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">
+        <p data-en="Yes! The Chinese Government Scholarship (CSC), provincial scholarships, and individual university scholarships are available to international students. Many cover full tuition plus a monthly stipend. ELH Sino-Consult will identify and help you apply for the scholarships you qualify for." data-fr="Oui ! La bourse du gouvernement chinois (CSC), les bourses provinciales et les bourses universitaires individuelles sont disponibles pour les étudiants internationaux. Beaucoup couvrent la scolarité complète plus une allocation mensuelle. ELH Sino-Consult vous aidera à identifier et à postuler aux bourses auxquelles vous êtes éligible.">Yes! The Chinese Government Scholarship (CSC), provincial scholarships, and individual university scholarships are available to international students. Many cover full tuition plus a monthly stipend. ELH Sino-Consult will identify and help you apply for the scholarships you qualify for.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span data-en="What programs are available in English?" data-fr="Quels programmes sont disponibles en anglais?">What programs are available in English?</span>
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">
+        <p data-en="Pharmacy, Medicine (MBBS), Engineering, Business Administration, Computer Science, International Relations, and many more are available fully in English at numerous universities. Contact us and we'll match you with the right English-taught program for your goals." data-fr="Pharmacie, Médecine (MBBS), Ingénierie, Administration des affaires, Informatique, Relations internationales et bien d'autres sont disponibles entièrement en anglais dans de nombreuses universités. Contactez-nous et nous vous correspondrons avec le bon programme en anglais pour vos objectifs.">Pharmacy, Medicine (MBBS), Engineering, Business Administration, Computer Science, International Relations, and many more are available fully in English at numerous universities. Contact us and we'll match you with the right English-taught program for your goals.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span data-en="Is ELH Sino-Consult's service free?" data-fr="Le service d'ELH Sino-Consult est-il gratuit?">Is ELH Sino-Consult's service free?</span>
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">
+        <p data-en="The initial consultation is completely free. We will assess your profile and provide honest advice at no cost. Our service fees apply to the full application management process. Contact us to learn more." data-fr="La consultation initiale est entièrement gratuite. Nous évaluerons votre profil et fournirons des conseils honnêtes sans frais. Nos frais de service s'appliquent au processus complet de gestion des candidatures. Contactez-nous pour en savoir plus.">The initial consultation is completely free. We will assess your profile and provide honest advice at no cost. Our service fees apply to the full application management process. Contact us to learn more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band reveal">
+  <div class="container cta-inner">
+    <h2 data-en="Still Have Questions?" data-fr="Vous Avez Encore des Questions?">Still Have Questions?</h2>
+    <p data-en="Our experts are ready to help you via WhatsApp, phone, or email." data-fr="Nos experts sont prêts à vous aider via WhatsApp, téléphone ou email.">Our experts are ready to help you via WhatsApp, phone, or email.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="https://wa.me/212688644749" class="btn-primary" target="_blank">💬 WhatsApp</a>
+      <a href="/apply" class="btn-secondary" data-en="Apply Now" data-fr="Postuler">Apply Now</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
